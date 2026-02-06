@@ -195,3 +195,4 @@ class FinancialCalculator:
         # Store result
         self.data["cash"] = total_cash
         return total_cash
+

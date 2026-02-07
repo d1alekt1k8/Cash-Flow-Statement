@@ -133,7 +133,7 @@ class FinancialCalculator:
         return self.data.get(canonical_id, 0.0)
 
 
-    def calculate_OperationCF(self) -> float:
+    def calculate_operational_cf(self) -> float:
         """
         Formula: OperationCF = Net Income + Depreciation + Gain(Loss) + Net Accounts Receivable - Inventory - Other Current Assets + Current Liabilities - Gain(Loss) on Disposal of PPE
         """
@@ -169,7 +169,7 @@ class FinancialCalculator:
 
     def calculate_financing_cf(self) -> float:
         """
-        Formula: FinancingCF = 
+        Formula: FinancingCF = Non-Current Liabilities (NCL) + Contributed Capital (CC) - Dividends (Div)
         """
         
         ncl = self.get_value("non_current_liabilities")
